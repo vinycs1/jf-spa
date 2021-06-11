@@ -5,7 +5,7 @@ import { store } from './store';
 export const App = () => (
   <Provider store={store}>
     <h1>
-      Hi
+      Hi teset
     </h1>
   </Provider>
 );
