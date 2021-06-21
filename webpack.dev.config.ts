@@ -28,6 +28,10 @@ const config: webpack.Configuration = {
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
+    alias: {
+      '@shared': path.resolve(__dirname, 'src/shared/'),
+      '@domain': path.resolve(__dirname, 'src/domain/'),
+    },
   },
   plugins: [
     new HtmlWebpackPlugin({
